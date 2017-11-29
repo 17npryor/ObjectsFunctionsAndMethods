@@ -259,6 +259,7 @@ def try_methods_and_functions():
     dill.backward(200)
     dill.draw_circle(30)
     dill.draw_square(50)
+    
     ####################################################################
     # DONE: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
