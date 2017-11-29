@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   RUN this program.  Then answer the following,
 #     GETTING HELP AS NEED! (Ask questions!!!)
 #
@@ -26,13 +26,13 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #              To the bottom of the screen.
 #
 #     b. Write a line of code that constructs a basic RoseWindow object:
-#            pt3 = rg.Point(5, 275)
-#            window = rg.RoseWindow()
+#            w = rg.RoseWindow()
+#
 #
 #     c. What is the default height of a RoseWindow?
 #        (Type the code shown in your answer above within main to see if PyCharm will help you figure out the answer.
 #         Hint: After you type the ( in the line of code, if you wait a moment PyCharm will add the ) and has a popup.)
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            300 units
 #
 #     d. Write a line of code that construct a RoseWindow object whose height is 100 with any width you choose.
 #         (again try to use PyCharm's hints to help you figure it out)
@@ -41,20 +41,23 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #     e. Use the DOT trick to answer the following:
 #
 #          -- Write the names of two types of graphics objects that you can construct OTHER than Circle and Point:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                ellipse, polygon
 #
 #          -- Write the names of three METHODs that Circle objects have:
 #               (Hint: Use the circle from the example3 function below with the dot trick to let PyCharm help you. )
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                attach_to, clone, detach_from
 #
 #          -- Write the names of three INSTANCE VARIABLEs that Circle objects have:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                fill_color, center, outline_color
 #
 #     f. What does a RoseWindow RENDER method do?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            Makes the objects on the RoseWindow visible.
 #
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            Yes, because the program naturally closes the window when
+#            everything in the program has been executed, unless a close_on_mouse_click
+#            command is used.
+#
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
@@ -133,7 +136,7 @@ def example3():
     center_point = rg.Point(300, 100)
     radius = 50
     circle = rg.Circle(center_point, radius)
-    circle.fill_color = 'green'
+    circle.fill_color= 'green'
     circle.attach_to(window)
 
     # ------------------------------------------------------------------
